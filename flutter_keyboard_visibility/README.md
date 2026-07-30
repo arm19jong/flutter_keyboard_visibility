@@ -10,6 +10,19 @@ Web support is an open issue [here](https://github.com/MisterJimson/flutter_keyb
 
 ## Install
 [Install the package](https://pub.dev/packages/flutter_keyboard_visibility/install)
+
+### iOS: Swift Package Manager and CocoaPods
+
+The iOS implementation ships both a `Package.swift` and a `.podspec`, so either dependency
+manager works:
+
+* **Swift Package Manager** is used automatically. It is enabled by default on Flutter stable,
+  and Flutter adds the plugin to your app's generated Swift package for you — no manual setup.
+* **CocoaPods** remains supported for projects that opt out of SPM with
+  `flutter config --no-enable-swift-package-manager`.
+
+Either way the minimum deployment target is iOS 13.0.
+
 ## Usage: React to Keyboard Visibility Changes
 ### Option 1: Within your `Widget` tree using a builder
 Build your Widget tree based on whether or not the keyboard is visible by using `KeyboardVisibilityBuilder`.
